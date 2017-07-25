@@ -52,7 +52,7 @@ public class RadioServlet extends HttpServlet {
 		//インスタンスを取得する
 		//引数は転送先のURL
 		RequestDispatcher dispatcher=
-		request.getRequestDispatcher("radiooutput");
+		request.getRequestDispatcher("radiooutput.jsp");
 
 		//転送先に要求を転送する
 		dispatcher.forward(request,response);

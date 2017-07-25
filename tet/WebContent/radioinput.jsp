@@ -6,7 +6,7 @@
 <title>らじお入力フォーム</title>
 </head>
 <body>
-	<form method='post' action='TextServlet'>
+	<form method='post' action='RadioServlet'>
 		ユーザー名
 		ごとう<input type="radio" name="name" value="gotou"><br>
 		はまで<input type="radio" name="name" value="hamade"><br>

@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -11,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class TextServlet
  */
-//@WebServlet("/TextServlet")
+@WebServlet("/TextServlet")
 public class TextServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -51,7 +52,7 @@ public class TextServlet extends HttpServlet {
 		//インスタンスを取得する
 		//引数は転送先のURL
 		RequestDispatcher dispatcher=
-		request.getRequestDispatcher("textoutput");
+		request.getRequestDispatcher("textoutput.jsp");
 		
 		//転送先に要求を転送する
 		dispatcher.forward(request,response);

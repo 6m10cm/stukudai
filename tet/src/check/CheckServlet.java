@@ -52,7 +52,7 @@ public class CheckServlet extends HttpServlet {
 		//RequestDispatcherインターフェイスを実装するクラスの
 		//インスタンスを取得する
 		//引数は転送先のURL
-		RequestDispatcher dispatcher= q.getRequestDispatcher("checkoutput");
+		RequestDispatcher dispatcher= q.getRequestDispatcher("checkoutput.jsp");
 
 		//転送先に要求を転送する
 		dispatcher.forward(q, p);
